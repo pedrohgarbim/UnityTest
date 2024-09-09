@@ -58,3 +58,28 @@ Esses testes focam em componentes ou métodos individuais. No projeto Calculator
 O projeto Flight utiliza testes baseados em cenários para lidar com lógicas de negócios complexas, como evitar overbooking, cancelamento de reservas e gerenciamento de assentos restantes.
 
 ## Conceitos Principais
+### Abordagem Test First
+No TDD, os testes são escritos primeiro para definir o comportamento de uma funcionalidade antes de a implementação começar. Essa abordagem garante que a implementação seja guiada pelos casos de teste, levando a uma melhor compreensão e cobertura dos requisitos.
+### Red-Green-Refactor
+Este projeto segue o processo tradicional Red-Green-Refactor:
+
+Red: O teste é escrito e falha inicialmente.
+
+Green: O código é escrito para passar no teste.
+
+Refactor: O código é limpo sem quebrar o teste.
+### Cenários de Reserva de Voos
+No projeto Flight, os princípios do TDD são aplicados a cenários como:
+
+Reservar um voo e garantir que o número correto de assentos esteja disponível.
+
+Lidar com cenários de overbooking.
+
+Cancelar reservas e liberar assentos.
+
+Implementar casos extremos para reservas inválidas.
+
+## Conclusão.
+Este projeto serve como um exemplo abrangente de como o TDD pode ser aplicado a diferentes cenários, desde testes unitários simples para uma calculadora até testes de cenários mais complexos para reservas de voos. Seguindo o processo de TDD, o objetivo é melhorar a qualidade do código e garantir que todos os casos extremos sejam tratados desde o início.
+
+
