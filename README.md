@@ -8,7 +8,7 @@ O repositório inclui os seguintes subprojetos:
 
 Este projeto contém operações matemáticas básicas que são completamente testadas usando testes unitários.
 
-### Flight
+### Flight:
 
 Este projeto simula cenários de reserva de voos, onde o TDD é usado para evitar overbooking e garantir o tratamento correto de casos especiais, como o número restante de assentos e cancelamentos.
 
