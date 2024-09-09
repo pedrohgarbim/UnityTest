@@ -32,15 +32,15 @@ Limpar o código, removendo duplicações, melhorando a estrutura e garantindo q
 Este ciclo é frequentemente chamado de processo Red-Green-Refactor:
 ![image](https://github.com/user-attachments/assets/674ecaf4-d901-432e-bc2e-fef41129939e)
 
-### Red
+### 🔴 Red
 
  Escreva um teste que falha inicialmente (o teste está vermelho).
 
- ### Green 
+ ### 🟢 Green 
 
 Escreva o código mais simples que faz o teste passar (o teste fica verde).
 
-### Refactor
+### 🔵 Refactor
 
 Otimize o código para melhorar sua estrutura, garantindo que todos os testes ainda passem.
 
