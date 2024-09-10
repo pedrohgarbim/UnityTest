@@ -1,13 +1,14 @@
 ﻿using Xunit;
 using Domain.Tests;
 using FluentAssertions;
+using Domain;
 
 namespace FlightTest
 {
     public class FlightTest
     {
         [Fact]
-        public void Test1()
+        public void Booking_reduces_the_number_of_seats()
         {
             var flight = new Flight(seatCapacity: 3);
 

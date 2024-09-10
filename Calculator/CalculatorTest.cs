@@ -1,4 +1,5 @@
 ﻿using Domain;
+using Domain.Tests;
 using FluentAssertions;
 using System;
 using Xunit;
