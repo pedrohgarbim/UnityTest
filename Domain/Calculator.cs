@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain
+namespace Domain.Tests
 {
     public class Calculator
     {
-         public int Sum(int left, int right)
-            => left + right;
-        
+        public int Sum(int left, int right)
+           => left + right;
+
     }
 }
