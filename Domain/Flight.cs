@@ -30,9 +30,15 @@ namespace Domain
             return null;
         }
 
-        public void CancelBooking(string passengerEmail, int numberOfSeats)
+        public object? CancelBooking(string passengerEmail, int numberOfSeats)
         {
+
+            if (!bookingsList.Any(booking => booking.Email == passengerEmail))
+                return new BookingNotFoundError();
+
+
             RemainingNumberOfSeats += numberOfSeats;
+            return new BookingNotFoundError();
 
         }
     }
