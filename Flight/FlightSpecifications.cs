@@ -5,7 +5,7 @@ using Domain;
 
 namespace FlightTest
 {
-    public class FlightTest
+    public class FlightSpecifications
     {
         [Fact]
         public void Booking_reduces_the_number_of_seats()
@@ -15,6 +15,17 @@ namespace FlightTest
             flight.Book("realomniman@superdefender.com", 1);
 
             flight.RemainingNumberOfSeats.Should().Be(2);   
+        }
+
+        [Fact]
+        public void Avoids_overbooking()
+        {
+            //Given
+            var flight = new Flight(seatCapacity: 3);
+            //When
+            var error = flight.Book("realomniman@superdefender.com", 4);
+            //Then
+            error.Should().BeOfType<OverbookingError>();
         }
     }
 }
