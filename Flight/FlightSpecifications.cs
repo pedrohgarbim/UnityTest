@@ -44,6 +44,7 @@ namespace FlightTest
         {
             var flight = new Flight(seatCapacity: 150);
             flight.Book(passengerEmail: "A@bb.com", numberOfSeats: 4);
+            flight.BookingList.Should().ContainEquivalentOf(new Booking("A@bb.com", 4));
         }
     }
 }
