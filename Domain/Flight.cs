@@ -38,7 +38,7 @@ namespace Domain
 
 
             RemainingNumberOfSeats += numberOfSeats;
-            return new BookingNotFoundError();
+            return null;
 
         }
     }
