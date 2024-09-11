@@ -7,14 +7,17 @@ namespace FlightTest
 {
     public class FlightSpecifications
     {
-        [Fact]
-        public void Booking_reduces_the_number_of_seats()
+        [Theory]
+        [InlineData(3,1,2)]
+        [InlineData(6, 3, 3)]
+        [InlineData(10, 6, 4)]
+        public void Booking_reduces_the_number_of_seats(int seatCapacity, int numberOfSeats, int remaningNumberOfSeats)
         {
-            var flight = new Flight(seatCapacity: 3);
+            var flight = new Flight(seatCapacity: seatCapacity);
 
-            flight.Book("realomniman@superdefender.com", 1);
+            flight.Book("realomniman@superdefender.com", numberOfSeats);
 
-            flight.RemainingNumberOfSeats.Should().Be(2);   
+            flight.RemainingNumberOfSeats.Should().Be(remaningNumberOfSeats);   
         }
 
         [Fact]
@@ -32,8 +35,15 @@ namespace FlightTest
         public void Books_flights_successfully()
         {
             var flight = new Flight(seatCapacity: 3);
-            var error = flight.Book("realomniman@superdefender.com", 4);
+            var error = flight.Book("realomniman@superdefender.com", 1);
             error.Should().BeNull();
+        }
+
+        [Fact]
+        public void Remembers_bookings()
+        {
+            var flight = new Flight(seatCapacity: 150);
+            flight.Book(passengerEmail: "A@bb.com", numberOfSeats: 4);
         }
     }
 }
