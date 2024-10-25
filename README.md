@@ -1,5 +1,8 @@
 ## 🧪 Projeto UnityTest
+### Exemplo de Projeto com varios testes
 
+Para maior entendimento de como funciona um projeto com diversos testes, vizualize o projeto pets, com mais de 1850 linhas dedicadas para testes. Clique no link do
+[Conexão Canina.](https://github.com/pedrohgarbim/conexao-canina-backend/tree/main)
 ### 📚 Introdução 
 
 Este repositório contém uma coleção de projetos desenvolvidos com **Test-Driven Development (TDD)**, que se concentram na implementação de vários tipos de testes unitários em C#. Os projetos demonstram como seguir os princípios de TDD para garantir um código limpo, confiável e bem estruturado.
